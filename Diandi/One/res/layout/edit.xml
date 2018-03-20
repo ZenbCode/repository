@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit" 
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_weight="0.25"
+        android:id="@+id/rl1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+         android:background="#E3E3E3"
+        android:orientation="horizontal"
+       	android:weightSum="5"
+        >
+        <LinearLayout
+		    android:layout_height="fill_parent"
+		    android:layout_width="wrap_content"
+		    android:layout_weight="1"
+		    android:gravity="center"
+		    android:orientation="horizontal" >
+        <Button
+            android:id="@+id/Btn_abandon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:background="@drawable/canclebutton"
+            android:textSize="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal" 
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView_diandi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="点   滴"
+                android:textColor="#000000"
+                android:textSize="45px" />
+        </LinearLayout>
+            
+        <LinearLayout
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+        <Button
+            android:id="@+id/Btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:background="@drawable/savebutton" />
+		</LinearLayout>
+ 
+       
+      </LinearLayout> 
+      <View  
+        android:layout_height="2px" 
+        android:background="#CDCDC1"       
+        android:layout_width="wrap_content"></View>
+   
+  <LinearLayout 
+        android:layout_weight="3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="center">
+        
+         <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:padding="10dp"
+            android:background="@drawable/show_edit_shape"
+            android:hint="输入你现在的心情......"      
+            android:layout_gravity="center_vertical"
+           
+           >
+			<requestFocus />
+        </EditText>   
+    </LinearLayout>
+   <LinearLayout
+        android:layout_weight="6.75"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#ffffff">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+  
+   
+</LinearLayout>

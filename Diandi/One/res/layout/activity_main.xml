@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+  	android:scrollbars="vertical"
+  	android:orientation="vertical"
+  	android:background="#ffffff"
+    tools:context=".MainActivity"
+    android:weightSum="10" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_weight="0.25"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:background="#E3E3E3">
+        <TextView
+            android:id="@+id/textView_diandi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="点   滴"
+            android:textSize="45px"
+            android:textColor="#000000"/>
+        <ImageView 
+            android:id="@+id/btn_carema"
+            android:layout_width="80sp"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"    
+            android:layout_marginLeft="260dp"
+            android:src="@drawable/carema"
+            android:background="#E3E3E3"/>
+    </RelativeLayout>
+    	<View  
+        android:layout_height="2px" 
+        android:background="#CDCDC1"       
+        android:layout_width="wrap_content"></View>
+    	
+    	
+      <com.example.one.LazyScrollView 
+       	android:id="@+id/waterfall_scroll "
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:layout_weight="1"  
+        android:scrollbars="@null"
+        android:background="#ffffff" 
+        >
+        
+        <LinearLayout
+        android:id="@+id/waterfall_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="#ffffff"
+       >
+        </LinearLayout>
+        </com.example.one.LazyScrollView>
+</LinearLayout>
